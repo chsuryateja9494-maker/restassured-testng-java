@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/SuryaChallagundla/IdeaProjects/restassured-testng-java/src/test/java/day7">
+        <classes>
+            <class name="day7.Authentications">
+                <methods>
+                    <include name="testEmptiveAuthentication"/>
+                    <include name="bearerTokenAuthentication"/>
+                    <include name="apiKeyAuthentication"/>
+                </methods>
+            </class>
+            <class name="day7.FakerGenerator">
+                <methods>
+                    <include name="fakeDataGenerator"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,189 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "server_time": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "is_active": {
+              "type": "boolean"
+            },
+            "profile": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "email",
+                "role"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "is_active",
+            "profile"
+          ]
+        },
+        "preferences": {
+          "type": "object",
+          "properties": {
+            "theme": {
+              "type": "string"
+            },
+            "notifications": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "boolean"
+                },
+                "push": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "email",
+                "push"
+              ]
+            }
+          },
+          "required": [
+            "theme",
+            "notifications"
+          ]
+        },
+        "skills": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "projects": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "project_id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "team_size": {
+                  "type": "integer"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "project_id",
+                "title",
+                "status",
+                "team_size",
+                "tags"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "project_id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "team_size": {
+                  "type": "integer"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "project_id",
+                "title",
+                "status",
+                "team_size",
+                "tags"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "user",
+        "preferences",
+        "skills",
+        "projects"
+      ]
+    },
+    "errors": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "status",
+    "server_time",
+    "data",
+    "errors"
+  ]
+}

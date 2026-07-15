@@ -1,0 +1,10 @@
+Create a remote repo
+
+Create a project in the Intellij local with matching to repo name in remore
+
+Download TestNG plugin from settings
+
+Add dependencies, you can get them from Rest assured document, Maven reposity website
+Dependencies: Restassured, github Json-path, gson, testng, scribejava-api's
+
+

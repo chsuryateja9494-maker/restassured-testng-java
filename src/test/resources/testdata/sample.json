@@ -1,0 +1,52 @@
+{
+  "status": "success",
+  "server_time": "2026-07-07T01:20:00Z",
+  "data": {
+    "user": {
+      "id": 1048,
+      "name": "Alex Mercer",
+      "is_active": true,
+      "profile": {
+        "email": "alex.mercer@example.com",
+        "role": "Administrator"
+      }
+    },
+    "preferences": {
+      "theme": "dark",
+      "notifications": {
+        "email": true,
+        "push": false
+      }
+    },
+    "skills": [
+      "JavaScript",
+      "Python",
+      "Go",
+      "Rust"
+    ],
+    "projects": [
+      {
+        "project_id": "PRJ-901",
+        "title": "Quantum Analytics Portal",
+        "status": "In Progress",
+        "team_size": 5,
+        "tags": [
+          "data-science",
+          "react",
+          "aws"
+        ]
+      },
+      {
+        "project_id": "PRJ-204",
+        "title": "Automated Backup Engine",
+        "status": "Completed",
+        "team_size": 2,
+        "tags": [
+          "devops",
+          "security"
+        ]
+      }
+    ]
+  },
+  "errors": null
+}

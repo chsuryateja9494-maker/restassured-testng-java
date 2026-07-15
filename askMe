@@ -1,0 +1,4 @@
+What is a header?
+To tell server which type of data you're sending
+Used with auth
+To validate which format of resposne is coming
