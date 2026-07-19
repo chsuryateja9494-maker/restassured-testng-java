@@ -25,7 +25,6 @@ public class CookiesDemo {
 //                .then()
 //                .statusCode(200);
                // .cookie("AEC",equalTo("AdJVEavUZ0Dj0imB3mvmZwqgcr91zXaDufQgDigGn4UCkQEQVmGfAiEiuQQ"));
-
        var oneCookieDetail = res.getCookie("AEC");
         System.out.println("oneCookieDetail = " + oneCookieDetail);
         var multipleCookies = res.getCookies();

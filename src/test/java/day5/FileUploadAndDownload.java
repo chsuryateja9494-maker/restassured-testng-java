@@ -41,7 +41,6 @@ public class FileUploadAndDownload {
 
 
     public void fileDownload(){
-
         given()
                 .when()
                 .get("http://localhost:8080/downloadfiles/Test2")

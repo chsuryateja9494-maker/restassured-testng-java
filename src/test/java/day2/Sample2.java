@@ -88,7 +88,7 @@ public class Sample2 {
         //The java.io.File class is an abstract representation of file and directory paths
         File f = new File(".\\src\\test\\resources\\testdata\\body.json");
         FileReader fr = new FileReader(f); //this is to read the file
-        JSONObject data = new JSONObject(); //this is to get the data, which is in json format for post request payload
+        JSONObject data = new JSONObject(fr); //this is to get the data, which is in json format for post request payload
 
         given()
                 .contentType("application/json")
